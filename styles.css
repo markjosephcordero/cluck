@@ -10,6 +10,23 @@ body {
     color: #571B7E;
   }
 
+  * {
+    box-sizing: border-box;
+  }
+  
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
     .profile_img {
         width: 200px;
         height: 200px;
@@ -46,10 +63,22 @@ body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   }
 
-  img {
+  .img1 {
+    /* Selects element having a class of .img1 */
     border-radius: 50%;
     max-width: 400px;
     height: 300px;
+  }
+
+  .img2 {
+    /* Selects element having a class of .img2 */
+    height: 200px;
+  }
+
+  .img3 {
+    /* Selects element having a class of .img3 */
+    text-align:center;
+    height: 200px;
   }
 
   h2 {
